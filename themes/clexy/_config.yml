@@ -1,0 +1,13 @@
+# config
+logo: /images/logo.png
+menu:
+  home: ' '
+  artigos: artigos
+  autor: autor
+
+# Content
+excerpt_link: Leia mais
+
+# Miscellaneous
+rss: /atom.xml
+google_analytics:
