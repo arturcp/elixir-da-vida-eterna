@@ -44,7 +44,7 @@ if is_archive() || (is_page() && page.title.toLowerCase() == 'artigos')
       | </ul>
 else if is_page() && page.title.toLowerCase() == 'autor'
   article.full
-    h1(itemprop='headline')= page.title
+    h1(itemprop='headline')= ""
     .avatar
     if(config.about !== undefined)
       .avatar-name
@@ -57,6 +57,9 @@ else if is_page() && page.title.toLowerCase() == 'autor'
       script(src="//use.fontawesome.com/d58379a62c.js")
       br
       .social-container
+        if(config.about.website !== undefined)
+          a(target="_blank",href=config.about.website)
+            span(class="fa fa-user-circle-o icons" aria-hidden="true")
         if(config.about.linkedin !== undefined)
           a(target="_blank",href=config.about.linkedin)
             span(class="fa fa-linkedin icons" aria-hidden="true")

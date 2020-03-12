@@ -1,13 +1,13 @@
 # config
 logo: /images/logo.png
 menu:
-  home: ' '
-  artigos: artigos
-  autor: autor
+  Home: ' '
+  Artigos: artigos
+  Sobre: autor
 
 # Content
 excerpt_link: Leia mais
 
 # Miscellaneous
-rss: /atom.xml
+# rss: /atom.xml
 google_analytics:

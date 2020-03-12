@@ -106,15 +106,14 @@ deploy:
   type: ''
 
 about : {
-  name : "Manish Kumar Khedawat",
-  intro1 : "Full Stack Developer, Bosch",
-  intro2 : "Alumni'14, IIT Kharagpur",
-  linkedin : "https://in.linkedin.com/in/mkkhedawat",
-  facebook : "https://www.facebook.com/mkkhedawat",
-  twitter : "https://twitter.com/mkkhedawat",
-  instagram : "https://www.instagram.com/mkkhedawat/",
-  email : "writetomansa@gmail.com",
-  github : "https://github.com/mkkhedawat",
-  stackoverflow : "https://stackoverflow.com/users/1608029/mkkhedawat",
-  sourceforge : "https://sourceforge.net/u/mkkhedawat/profile/"
+  name : "Artur Caliendo Prado",
+  intro1 : "Preparando minhas primeiras poções com Elixir",
+  intro2 : "Full Stack Developer, palestrante e escritor",
+  website : "https://arturprado.com",
+  linkedin : "https://www.facebook.com/artur.caliendoprado",
+  facebook : "https://www.facebook.com/artur.caliendoprado",
+  twitter : "https://twitter.com/artur_caliendo",
+  instagram : "https://www.instagram.com/arturcaliendo/",
+  email : "artur.prado@gmail.com",
+  github : "https://github.com/arturcp"
 }
