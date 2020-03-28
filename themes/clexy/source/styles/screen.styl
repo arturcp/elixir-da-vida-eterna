@@ -543,3 +543,19 @@ hr
           input[type="email"]
             width 35%
             margin .5em .5em .5em 0
+
+  // ===========================================================================
+  // 6. Override
+  // ===========================================================================
+
+  :not(pre) > code[class*="language-"], pre[class*="language-"]
+    background-color: $black
+    color: $white
+
+  code[class*="language-"], pre[class*="language-"]
+    background-color: $black
+    color: $white
+
+  .token.operator
+    color: inherit
+    background-color: inherit
