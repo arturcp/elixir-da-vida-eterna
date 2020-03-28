@@ -11,11 +11,11 @@ tags:
 
 Venho namorando a ideia de aprender uma linguagem funcional há algum tempo e alternei entre [Go lang](https://golang.org/) e [Elixir](https://elixir-lang.org/) sem saber para que lado correr.
 
-Trabalho com Ruby on Rails há anos e sabia que a mudança seria menor se optasse pelo caminho dos alquimistas, mas não tomei coragem de decidir até 29/02/2020, dia em que eu participei pela primeira vez do ElugSP.
+Trabalho com Ruby on Rails há anos e sabia que a mudança seria menor se optasse pelo caminho dos alquimistas, mas não me decidi até 29/02/2020, dia em que eu participei pela primeira vez do ElugSP.
 
-Outro meetup desses no mesmo dia do mesmo mês, só daqui 4 anos. Só podia ser um sinal.
+Outro meetup desses no mesmo dia do mesmo mês, só daqui 4 anos. Tinha de ser um sinal.
 
-A verdade é que a comunidade Elixir me ganhou. Não consegui ir no meetup de Go, mas o que vi foi o bastante para que eu escolhesse qual dos dois caminhos eu iria trilhar.
+A verdade é que foi a comunidade que me ganhou. Não consegui ir no meetup de Go, mas o que vi foi o bastante para escolher qual dos dois caminhos eu iria trilhar.
 
 ![Elixir](/images/1/elixir.png)
 
@@ -25,20 +25,17 @@ JessePinkmanFeelings.
 
 ## A comunidade
 
-O que me marcou mais foi o esforço que a comunidade Elixir está fazendo para crescer de forma inclusiva. A história das Elixir Confs é marcada de lutas por minorias, de pessoas fazendo o possível para todos possam fazer parte, um
-propósito que aplaudo de pé.
+O que me envolveu mais foi o esforço que a comunidade Elixir está fazendo para crescer de forma **inclusiva**. A história da Elixir Brasil é marcada pela luta em nome das minorias, feita por pessoas que deram tudo de si para que todos se sentissem parte da comunidade, um propósito que aplaudo de pé.
 
-Não tenho a ilusão de que a comunidade é perfeita, mas querer fazê-la do jeito certo é mais do que se vê por aí, um exemplo a ser seguido. Foi ali que eu pensei "quero fazer parte disso", e aqui estou, escrevendo essas linhas.
-
-Inclusive, escolhi escrever em português justamente porque um dos tópicos levantados no meetup foi a dificuldade de encontrar material no idioma tupiniquim e sobre como isso dificulta a vida de quem não sabe inglês.
+Não tenho a ilusão de que a comunidade é perfeita, mas querer fazê-la do jeito certo é mais do que se vê por aí, um exemplo a ser seguido. Naquele dia decidi que quero fazer parte disso e aqui estou, escrevendo essas primeiras linhas, escritas em português porque um dos tópicos levantados no meetup foi a dificuldade de encontrar material no idioma tupiniquim, sobre como isso dificulta a vida daqueles que não têm o privilégio - financeiro, de tempo, de oportunidade - de aprender inglês.
 
 ## Os primeiros passos
 
 Escolha feita, é hora de botar a mão na massa. A primeira coisa a fazer é instalar tudo o que vou precisar para fazer meu primeiro site com Elixir e Phoenix, e para isso bastou uma busca rápida no Google.
 
-Também comecei a ler [Programming Phoenix 1.4](https://www.amazon.com.br/dp/B084NV65T8), de Chris McCord, Bruce Tate e José Valim. O livro é ótimo é leva você pela mão para construir sua primeira aplicação.
+Também comecei a ler [Programming Phoenix 1.4](https://www.amazon.com.br/dp/B084NV65T8), de Chris McCord, Bruce Tate e José Valim. O livro leva a gente pela mão e ensina construir nossa primeira aplicação em Phoenix, com exemplos práticos que podem ser aplicados sem muita enrolação.
 
-Para quem veio do Rails, o caminho é bastante suave.
+Para quem veio do Rails, foi uma caminhada leve e agradável na branda aragem do outono.
 
 
 ## Pré-requisitos
@@ -59,7 +56,7 @@ Caso preciso instalar o Erlang, [este site irá te ajudar](https://www.erlang-so
 
 ## Elixir
 
-Não vou me alongar explicando como instalar o Elixir, uma vez que a [documentação oficial](https://elixir-lang.org/install.html) faz isso de forma detalhada. Se tiver dificuldades com o inglês, não se preocupe: se você procurar pelo seu sistema operacional, basta copiar o trecho de código e executar no terminal.
+Não vou me alongar explicando como instalar o Elixir uma vez que a [documentação oficial](https://elixir-lang.org/install.html) faz isso de forma detalhada. Se tiver dificuldades com o inglês, não se preocupe: se você procurar pelo seu sistema operacional na página, basta copiar o trecho de código e executar no terminal.
 
 Por exemplo, para instalar no macOS, com Homebrew, basta executar:
 
@@ -72,7 +69,7 @@ O próximo passo é instalar o Hex.
 
 ## Hex
 
-Hex é um gerenciador de pacotes usado tanto pelo Erland quanto pelo Elixir. Instalar é bem simples, desde que você já tinha instalado o Elixir na sua máquina:
+Hex é um gerenciador de pacotes usado tanto pelo Erland quanto pelo Elixir. Instalar é bem simples desde que você já tenha o Elixir instalado:
 
 ```
 mix local.hex
@@ -102,7 +99,51 @@ O resultado vai ser algo parecido com isso:
 >
 > Elixir 1.10.2 (compiled with Erlang/OTP 22)
 
-Estou com a versão 22 do Erlang e a 1.10.2 do Elixir.
+Estou com a versão 22 do Erlang e a 1.10.2 do Elixir. Quase me esqueci de uma coisa importante: você vai precisar de node.js para os assets.
 
+Vá ao terminal e execute:
 
-## Elixir school
+```
+node -v
+```
+
+Caso não tenha o node instalado, você pode baixá-lo [no site oficial](https://nodejs.org/pt-br/) - o melhor de tudo é que o site tem uma versão em português.
+
+Agora, tudo o que resta é instalar o Phoenix e rara isso, vamos usar o mix. Se você conhece Ruby, uma boa analogia é que o mix é o Bundler, o RubyGems e o Rake, tudo ao mesmo tempo.
+
+Vá ao terminal e execute:
+
+```
+mix archive.install hex phx_new
+```
+
+Ele vai pedir uma confirmação e voilá. Estamos prontos para começar. Para criar seu projeto em Phoenix, basta digitar:
+
+```
+mix phx.new <nome do projeto>
+```
+
+O nome do projeto deve começar com uma letra e ter apenas letras minúsculas, números e o _underscore_ (`_`). Por exemplo: `mix phx.new hello_world`.
+
+```bash
+We are almost there! The following steps are missing:
+
+    $ cd hello_world
+
+Then configure your database in config/dev.exs and run:
+
+    $ mix ecto.create
+
+Start your Phoenix app with:
+
+    $ mix phx.server
+
+You can also run your app inside IEx (Interactive Elixir) as:
+
+    $ iex -S mix phx.server
+```
+--------------------
+
+# Dica do dia
+
+Vale a pena visitar o [Elixir school](http://elixirschool.com/pt/), ele tem me ajudado muito a entender melhor o Elixir.
