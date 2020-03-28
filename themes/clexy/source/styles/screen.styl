@@ -549,13 +549,13 @@ hr
   // ===========================================================================
 
   :not(pre) > code[class*="language-"], pre[class*="language-"]
-    background-color: $black
-    color: $white
+    background-color: $black !important
 
-  code[class*="language-"], pre[class*="language-"]
-    background-color: $black
-    color: $white
+  .language-bash
+    color: $white !important
+    text-shadow: none !important
+
 
   .token.operator
-    color: inherit
-    background-color: inherit
+    color: inherit !important
+    background-color: inherit !important
