@@ -1,5 +1,7 @@
 ---
 title: Por que escolhi Elixir
+author: Artur Caliendo Prado
+keywords: "iniciante, instalação, elixir, erlang, phoenix"
 date: 2020-03-18 07:14:37
 tags:
 - iniciante
@@ -7,6 +9,7 @@ tags:
 - elixir
 - erlang
 - phoenix
+
 ---
 
 Venho namorando a ideia de aprender uma linguagem funcional há algum tempo e alternei entre [Go lang](https://golang.org/) e [Elixir](https://elixir-lang.org/) sem saber para que lado correr.
