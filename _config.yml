@@ -6,7 +6,7 @@
 title: "|> Elixir da vida eterna"
 subtitle: 'Aventuras de um pretenso alquimista'
 description: 'O que aprendi sobre Elixir e Phoenix, em doses homeopáticas'
-keywords: 'elixir,phoenix,programação,funcional,valim'
+keywords: elixir,phoenix,programação,funcional,valim
 author: Artur Caliendo Prado
 language: pt
 timezone: 'America/Sao_Paulo'
