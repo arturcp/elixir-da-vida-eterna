@@ -115,10 +115,10 @@ else if is_post()
   br
   if page.next
     span(class='next-post')
-      a(href= config.root + page.next.path, itemprop='url') #{ 'Older Post ⇒'}
+      a(href= config.root + page.next.path, itemprop='url') #{ 'Artigo anterior ⇒'}
   if page.prev
     span(class='prev-post')
-      a(href= config.root + page.prev.path, itemprop='url') #{ '⇐ Next Post '}
+      a(href= config.root + page.prev.path, itemprop='url') #{ '⇐ Próximo artigo '}
   br
   include _comments
   br
